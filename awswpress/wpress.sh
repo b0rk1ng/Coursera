@@ -20,3 +20,9 @@ find /var/www -type d -exec chmod 2775 {} \;
 find /var/www -type f -exec chmod 0664 {} \;
 
 apache2ctl restart
+
+# SET PASSWORD AFRESH BEFORE USING
+mysql -u root -e "CREATE DATABASE wordpress; \
+	CREATE USER 'wpress'@'localhost' IDENTIFIED BY 'WpDb!1'; \
+	GRANT ALL PRIVILEGES ON wordpress.* TO 'wpress'@'localhost'; \
+	FLUSH PRIVILEGES;"
