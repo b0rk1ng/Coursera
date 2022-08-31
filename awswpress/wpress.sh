@@ -2,7 +2,7 @@
 
 sudo apt update
 
-sudo amazon-linux-extras install -y lamp-mariadb10.2-php8.1 php8.1
+# sudo amazon-linux-extras install -y lamp-mariadb10.2-php8.1 php8.1
 sudo apt -y install apache2 mariadb-server
 sudo apt -y install php-common php8.1-common php8.1-cli php8.1-fpm php8.1-mysql libapache2-mod-php8.1 libsodium23 php8.1-opcache php8.1-readline
 
