@@ -84,7 +84,7 @@ resource "aws_instance" "project-iac" {
 
   depends_on = [ aws_security_group.project-iac-sg ]
 
-  # user_data = "${file("wpress.sh")}"
+  user_data = "${file("wpress.sh")}"
 
 }
 
